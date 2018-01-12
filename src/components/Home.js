@@ -5,34 +5,68 @@ View,
 Text,
 TextInput,
 ToucheableOpacity,
+TouchableHighlight,
 StyleSheet
 } from 'react-native';
 
+import {Actions} from 'react-native-router-flux';
+
 class Home extends React.Component{
+    state = {
+        name: '',
+    };
+
+    funcao = () => {
+        console.log('Chamou a funcao');
+    }
+
     render(){
         return(
-            <View>
+            <View> 
                 <Text style={styles.title}>
-                    Enter your name:
-                </Text>
-                <TextInput
-                    style={styles.nameInput}
-                    placeholder='John Snow'
-                    onChangeText={(text) => {
-                        this.setState({
-                            name: text,
-                        });
-                    }}
-                    value={this.state.name}
-                />
-                <ToucheableOpacity onPress={() => {Actions.chat({name: this.state.name})}}>
-                    <Text style={styles.buttonText}>Next</Text>
-                </ToucheableOpacity>
+                     Enter your name:
+                 </Text>
+
+                  <TextInput
+                     style={styles.nameInput}
+                     placeholder='John Snow'
+                     onChangeText={(text) => {
+                         this.setState({
+                             name: text,
+                         });
+                     }}
+                     value={this.state.name}
+                 />
+
+                 <TouchableHighlight onPress={() => {Actions.chat({name: this.state.name})}}>
+                     <Text style={styles.buttonText}>Next</Text>
+                 </TouchableHighlight>
+
 
             </View>
+            // <View>
+            //     <Text style={styles.title}>
+            //         Enter your name:
+            //     </Text>
+            //     <TextInput
+            //         style={styles.nameInput}
+            //         placeholder='John Snow'
+            //         onChangeText={(text) => {
+            //             this.setState({
+            //                 name: text,
+            //             });
+            //         }}
+            //         value={this.state.name}
+            //     />
+            //     <ToucheableOpacity onPress={() => {Actions.chat({name: this.state.name})}}>
+            //         <Text style={styles.buttonText}>Next</Text>
+            //     </ToucheableOpacity>
+
+            // </View>
         );
     }
 }
+
 var styles = StyleSheet.create({
     title:{
         marginTop: 20,
@@ -52,3 +86,6 @@ var styles = StyleSheet.create({
     }
 
 })
+
+
+export default Home;

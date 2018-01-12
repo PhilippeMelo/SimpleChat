@@ -1,5 +1,11 @@
-import React from 'react';
+import React,{Component} from 'react';
 import {GiftedChat} from 'react-native-gifted-chat';
+
+import {} from 'react-native';
+
+import PropTypes from 'prop-types';
+
+import Backend from '../Backend';
 
 class Chat extends React.Component{
     state = {
@@ -35,7 +41,7 @@ class Chat extends React.Component{
 Chat.defaultProps = {name: 'John',};
 
 Chat.propTypes = {
-    name: React.PropTypes.string,
+    name: PropTypes.string,
 }
 
 export default Chat;

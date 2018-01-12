@@ -1,4 +1,5 @@
 
+import React, {Component} from 'react';
 import {Platform} from 'react-native';
 import Home from './components/Home';
 import Chat from './components/Chat';
@@ -7,7 +8,7 @@ import{
   Scene
 } from 'react-native-router-flux';
 
-class App extends Component<{}> {
+class App extends Component {
   render() {
     return (
       <Router>
