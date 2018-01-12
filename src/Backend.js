@@ -7,10 +7,10 @@ class Backend{
     //Initialize Firebase Backend
     constructor(){
         firebase.initializeApp({
-            apiKey:'',
-            authDomain: '',
-            databaseURL: '',
-            storageBucket: '',
+            apiKey:'AIzaSyD98fFO5t1cmkLbC3VN4wb41Lsk9SkqV-8',
+            authDomain: 'simplechat-58d6c.firebaseio.com',
+            databaseURL: 'https://simplechat-58d6c.firebaseio.com',
+            storageBucket: 'simplechat-58d6c.appspot.com',
         });
         firebase.auth().onAuthStateChanged((user) => {
             if (user) {

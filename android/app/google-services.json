@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "896430026638",
+    "firebase_url": "https://simplechat-58d6c.firebaseio.com",
+    "project_id": "simplechat-58d6c",
+    "storage_bucket": "simplechat-58d6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896430026638:android:7d8ca69cacaec546",
+        "android_client_info": {
+          "package_name": "com.simplechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896430026638-7d7ldahlnjesasv50g4kh9akv5d3g963.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuaA-6ySB1iTZduInWJAeQ8AHSto8xU4U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,4 +1,12 @@
 
+import React from 'react';
+import {
+View,
+Text,
+TextInput,
+ToucheableOpacity,
+StyleSheet
+} from 'react-native';
 
 class Home extends React.Component{
     render(){
